@@ -4,7 +4,7 @@ from about.forms import ContactForm
 from blogapp import settings  
 from django.core.mail import send_mail  
 
-
+# use for contact_us page.
 def contact(request): 
     if request.method == 'POST':
         form = ContactForm(request.POST)

@@ -19,8 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from post import views as post_views
 
-
-
+# url for blog apps.
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('post/',include('post.urls')),

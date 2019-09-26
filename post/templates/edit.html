@@ -1,5 +1,7 @@
+<!--Use to edit post in blog. -->
 {% extends  'index.html' %}
 {% load crispy_forms_tags %}
+<!-- Load django crispy_form. -->
 {% block content %}
 <br/><div class="shadow p-3 mb-5 bg-white rounded container signup" id="boxshadow" style="width:40%">
     <form method="POST" action="{% url 'edit' pk=form.instance.pk %}" enctype="multipart/form-data">  
