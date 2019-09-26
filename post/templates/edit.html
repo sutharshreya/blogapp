@@ -1,0 +1,12 @@
+{% extends  'index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<br/><div class="shadow p-3 mb-5 bg-white rounded container signup" id="boxshadow" style="width:40%">
+    <form method="POST" action="{% url 'edit' pk=form.instance.pk %}" enctype="multipart/form-data">  
+        {% csrf_token %}
+        <h2 align="center">Edit Post</h2>
+        {{ form|crispy }}
+        <br/><button type="submit" class="btn btn-success btn-block">Update</button>
+    </form>
+</div>
+{% endblock %}
